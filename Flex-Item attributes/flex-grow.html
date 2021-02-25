@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8" />
+        <style type="text/css">
+            *{
+                margin: 0;
+            }
+            .container{
+                display: flex; /*Declaring that my .container element is a "flex" element*/
+                background-color: yellowgreen;
+                flex-wrap: wrap;
+            }
+            .container > div{
+                background-color: white;
+                font-size : 30px;
+                padding : 10px;
+                margin : 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <p><span style="font-weight: bold;">{defaultValue : 0 && -ve not allowed}</span>flex-grow
+        property divides the remaining space into ratios.</p>
+        <p>Here the space left for the (1) and (2) has been divided in the ratio by setting
+            {flex-grow : 1} and {flex-grow : 2} respectively.
+        </p>
+        <div class='container'>
+            <div style="flex-grow: 1;">1</div>
+            <div style="flex-grow: 2;">2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+        </div>
+    </body>
+</html>

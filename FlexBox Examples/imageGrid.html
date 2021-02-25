@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Image Grid</title>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+            text-align: center;
+        }
+        body{
+            margin : 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .row-container{
+            display: flex;
+            flex-flow: row wrap;
+            padding: 0 4px;
+            
+        }
+        .col-container{
+            flex : 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        .col-container > img{
+            margin: 3px;
+            opacity: 0.7;
+            width: 100%;
+            vertical-align: middle;
+        }
+        .col-container > img:hover{
+            opacity: 1;
+            border: 10px solid black;
+        }
+
+        @media (max-width: 800px){
+            .col-container{
+                flex : 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media (max-width : 600px){
+            .col-container{
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>A Responsive Image Grid</h1>
+        <h4>Resize the window to see RESPONSIVENESS</h4>
+    </header>
+    <br />
+    <div class="row-container">
+        <div class="col-container">
+            <img src='../Images/first.jpg' alt="First image" />
+            <img src='../Images/second.jpg' alt="second image" />
+            <img src='../Images/third.jpg' alt="third image" />
+            <img src='../Images/fourth.jpg' alt="fourth image" />
+            <img src='../Images/fifth.jpg' alt="fifth image" />
+            <img src='../Images/sixth.jpg' alt="sixth image" />
+        </div>
+
+        <div class="col-container">
+            <img src='../Images/third.jpg' alt="third image" />
+            <img src='../Images/fourth.jpg' alt="fourth image" />
+            <img src='../Images/fifth.jpg' alt="fifth image" />
+            <img src='../Images/sixth.jpg' alt="sixth image" />
+            <img src='../Images/first.jpg' alt="First image" />
+            <img src='../Images/second.jpg' alt="second image" />
+        </div>
+
+        <div class="col-container">
+            <img src='../Images/fifth.jpg' alt="fifth image" />
+            <img src='../Images/sixth.jpg' alt="sixth image" />
+            <img src='../Images/third.jpg' alt="third image" />
+            <img src='../Images/first.jpg' alt="First image" />
+            <img src='../Images/second.jpg' alt="second image" />
+            <img src='../Images/fourth.jpg' alt="fourth image" />
+
+        </div>
+
+        <div class="col-container">
+            <img src='../Images/fourth.jpg' alt="fourth image" />
+            <img src='../Images/third.jpg' alt="third image" />
+            <img src='../Images/fifth.jpg' alt="fifth image" />
+            <img src='../Images/sixth.jpg' alt="sixth image" />
+            <img src='../Images/first.jpg' alt="First image" />
+            <img src='../Images/second.jpg' alt="second image" />
+        </div>
+    </div>
+</body>
+</html>

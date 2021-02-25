@@ -1,0 +1,74 @@
+<!--This is the basic code which I will use in most of the files-->
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8" />
+        <style type="text/css">
+            *{
+                margin: 0;
+            }
+            .container{
+                display: flex; /*Declaring that my .container element is a "flex" element*/
+                background-color: yellowgreen;
+            }
+            .container > div{
+                background-color: white;
+                font-size : 30px;
+                padding : 10px;
+                margin : 5px;
+            }
+            .flex-start{
+                justify-content: flex-start;
+            }
+            .flex-end{
+                justify-content: flex-end;
+            }
+            .space-around{
+                justify-content: space-around;
+            }
+            .space-between{
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>{justify-content : flex-start} <span style="color : green">(defaultValue)</span></h3>
+        <div class='container flex-start'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+        <br />
+        <h3>{justify-content : flex-end}</h3>
+        <div class="container flex-end">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+        <br/>
+
+        <h3>{justify-content : space-around} <span style="color : green">(Very Useful)</span></h3>
+        <div class="container space-around">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+        <br />
+
+        <h3>{justify-content : space-between} <span style="color : green">(Very Useful)</span></h3>
+        <div class="container space-between">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+        <br />
+    </body>
+</html>

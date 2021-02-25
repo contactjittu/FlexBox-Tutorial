@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8" />
+        <style type="text/css">
+            *{
+                margin: 0;
+            }
+            .container{
+                display: flex; /*Declaring that my .container element is a "flex" element*/
+                background-color: yellowgreen;
+            }
+            .container > div{
+                background-color: white;
+                font-size : 30px;
+                padding : 10px;
+                margin : 5px;
+            }
+            .row{
+                flex-direction: row;
+            }
+            .column{
+                flex-direction: column;
+            }
+            .row-reverse{
+                flex-direction: row-reverse;
+            }
+            .column-reverse{
+                flex-direction: column-reverse;
+            }
+        </style>
+    </head>
+    <body>
+        <p>{flex-direction : row (Default)}</p>
+        <div class='container row'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <p>{flex-direction : column}</p>
+        <div class='container column'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <p>{flex-direction : row-reverse}</p>
+        <div class='container row-reverse'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <p>{flex-direction : column-reverse}</p>
+        <div class='container column-reverse'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </body>
+</html>

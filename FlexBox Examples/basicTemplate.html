@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Template No.1</title>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+            
+        }
+        body{
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .header{
+            background-color: blanchedalmond;
+            color: brown;
+            padding : 5px;
+            text-align: center;
+            border-left: 20px solid brown;
+            border-right: 20px solid brown;
+        }
+        .nav{
+            display: flex;
+            flex-flow: row wrap;
+            background-color: slategray;
+        }
+        .nav > a{
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            text-align: center;
+        }
+        .nav > a:hover{
+            background-color:white;
+            color: brown;
+        }
+        .section{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .side{
+            padding: 20px;
+            flex: 30%;
+            background-color: rgb(245, 236, 236);
+        }
+        .main{
+            padding: 20px;
+            flex: 70%;
+        }
+        .fakeimg{
+            padding: 20px;
+            height: 200px;
+            width: 100%;
+            background-color: lightslategray;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        @media (max-width : 600px){
+            .nav, .section {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!--Header Starts here-->
+    <div class="header">
+        <h1>My Website</h1>
+        <p>With a <b>flexible</b> layout</p>
+    </div>
+    <!--Nav Starts here-->
+    <div class="nav">
+        <a href="#">HOME</a>
+        <a href="#">NEWS</a>
+        <a href="#">ABOUT</a>
+        <a href="#">HELP</a>
+    </div>
+    <!--Section Starts here-->
+    <div class="section">
+        <div class="side">
+            <h2>About Me</h2>
+            <h4>My Profile Photo</h4>
+            <div class="fakeimg">
+                Profile Image
+            </div>
+            <h5>Some More Text..</h5>
+            <p>The quick brown fox jumped over the lazy dog.
+                 The quick brown fox jumped over the lazy dog</p>
+            <div class="fakeimg" style="height: 100px;">
+                Image
+            </div>
+            <br />
+            <div class="fakeimg" style="height: 100px;">
+                Image
+            </div>
+            <br />
+            <div class="fakeimg" style="height: 100px;">
+                Image
+            </div>
+        </div>
+        <div class="main">
+            <h1>TITLE HEADING</h1>
+            <p>Title Description : 25 Feb, 2021</p>
+            <div class="fakeimg" style="height: 300px;">
+                Image
+            </div>
+            <p>Some Text...</p>
+            <p>The quick brown fox jumped over the lazy dog.
+                The quick brown fox jumped over the lazy dog.
+                The quick brown fox jumped over the lazy dog.
+                The quick brown fox jumped over the lazy dog.
+                The quick brown fox jumped over the lazy dog.
+                The quick brown fox jumped over the lazy dog.</p>
+
+            <br />    
+            <h1>TITLE HEADING</h1>
+            <p>Title Description : 25 Feb, 2021</p>
+            <div class="fakeimg" style="height: 300px;">
+                Image
+            </div>
+            <p>Some Text...</p>
+            <p>The quick brown fox jumped over the lazy dog.
+                The quick brown fox jumped over the lazy dog.
+                The quick brown fox jumped over the lazy dog.
+                The quick brown fox jumped over the lazy dog.
+                The quick brown fox jumped over the lazy dog.
+                The quick brown fox jumped over the lazy dog.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>Footer</h3>
+    </div>
+</body>
+</html>

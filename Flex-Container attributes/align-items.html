@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8" />
+        <style type="text/css">
+            *{
+                margin: 0;
+            }
+            .container{
+                display: flex; /*Declaring that my .container element is a "flex" element*/
+                background-color: yellowgreen;
+                height: 400px;
+                flex-wrap: wrap;
+                width: 80%;
+                margin: auto;
+            }
+            .container:nth-child(odd){
+                background-color: plum;
+            }
+            .container > div{
+                background-color: white;
+                font-size : 30px;
+                padding : 10px;
+                margin : 5px;
+            }
+            .center{
+                align-items: center;
+            }
+            .flex-start{
+                align-items: flex-start;
+            }
+            .flex-end{
+                align-items: flex-end;
+            }
+            .baseline{
+                align-items: baseline;
+            }
+            .baseline:hover{
+                align-items: stretch;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>{align-items : center}</h3>
+        <div class='container center'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+        </div>
+        <br />
+        
+        <h3>{align-items : flex-start}</h3>
+        <div class='container flex-start'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+        </div>
+        <br />
+
+        <h3>{align-items : flex-end}</h3>
+        <div class='container flex-end'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+        </div>
+        <br />
+
+        <h3>{align-items : stretch} <span style="color : green">(defaultValue)</span></h3>
+        <div class='container stretch'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>1</div>
+        </div>
+        <br />
+
+        <h3>{align-items : baseline}<span style="color : red">HOVER OVER<span style="color: purple;">"to change it to defaultValue"</span></span></h3>
+        <div class="container baseline">
+            <div><p>1</p></div>
+            <div><h1>2</h1></div>
+            <div><h6>3</h6></div>
+            <div><h3>4</h3></div>
+            <div><p>1</p></div>
+            <div><h1>2</h1></div>
+            <div><h6>3</h6></div>
+            <div><h3>4</h3></div>
+        </div>
+    </body>
+</html>

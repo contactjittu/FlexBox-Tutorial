@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <style type='text/css'>
+        .flex-container{
+            display : flex;
+            background-color: mediumturquoise;
+            flex-flow: row wrap;
+        }
+        .flex-container > div{
+            margin : 10px;
+            padding : 10px;
+            background-color : white;
+            font-size: 30px;
+        }
+        #order{
+            background-color : red;
+            color : white;
+        }
+        </style>
+        <script>
+            function changeOrder(){
+                var input = document.getElementById('value').value;
+                document.getElementById('order').style.order = input;
+                document.getElementById('order').innerHTML = 'Order' + input;
+            };
+        </script>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div id="" style="order : 1">Order 1</div>
+            <div style="order: 5;">Order 5</div>
+            <div style="order: 7;">Order 7</div>
+            <div id='order' style="order: 9;">Order 9</div>
+            <div style="order: 11;">Order 11</div>
+            <div style="order: 15;">Order 15</div>
+            <div style="order: 20;">Order 20</div>
+        </div>
+        <br />
+
+        <div class='script'>
+            <label>
+            Change the order of the 'red' div element :  
+            <input type='number' id='value' value='9' onchange="changeOrder()" />
+            </label>
+        </div>
+    </body>
+</html>
